@@ -269,11 +269,10 @@
   .root {
     border-bottom-left-radius: 48px;
     border-bottom-right-radius: 48px;
-    min-height: auto;
   }
   .content {
     padding-top: calc(1rem + 135px + env(safe-area-inset-top, 0px));
-    padding-bottom: 0;
+    padding-bottom: 2rem;
   }
   .bodyColumn {
     flex-direction: column;
@@ -298,6 +297,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    pointer-events: none;
+    z-index: 0;
   }
   .title {
     font-size: clamp(1.75rem, 6vw, 3rem);
