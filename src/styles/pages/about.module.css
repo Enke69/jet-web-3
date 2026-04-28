@@ -1,0 +1,171 @@
+.section {
+  padding: 64px 0;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contentCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+.contentCard p {
+  margin: 0 0 12px;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.contentCard p:last-child {
+  margin-bottom: 0;
+}
+
+.infoBox {
+  background: var(--bg-soft);
+  border-left: 4px solid var(--brand-red);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+}
+
+.infoBox h4 {
+  margin: 0 0 10px;
+  color: var(--text-dark);
+}
+
+.infoBox ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+}
+
+.infoBox li {
+  margin-bottom: 6px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 24px;
+  border-left: 2px solid var(--brand-red);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.timelineItem {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.year {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--brand-red);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.timelineItem h4 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.timelineItem p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+}
+
+.valueCard h3 {
+  margin: 8px 0 6px;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.valueCard p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.cta {
+  padding: 64px 0;
+  background: var(--text-dark);
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.cta p {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--brand-red);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background var(--transition);
+}
+
+.ctaPrimary:hover {
+  background: var(--brand-red-hover);
+}
+
+@media (max-width: 900px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}
