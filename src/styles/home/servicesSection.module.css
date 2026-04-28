@@ -1,54 +1,139 @@
 .root {
-  padding: 80px 0;
+  position: relative;
+  padding: 130px 0;
+  overflow: visible;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+/* Arc pattern lines */
+.pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  background-position: -10% 50%;
+  opacity: 0.12;
+  pointer-events: none;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 28px 24px;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  color: var(--text-dark);
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+/* Blurred dark blob orbs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--brand-red-glow);
+.blob1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
 }
 
-.icon {
-  font-size: 2rem;
+.blob2 {
+  width: 350px;
+  height: 350px;
+  bottom: -80px;
+  right: -60px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section header */
+.header {
+  text-align: center;
+  margin-bottom: 56px;
 }
 
 .title {
-  margin: 0;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-dark);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
 }
 
-.description {
-  margin: 0;
-  flex-grow: 1;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.link {
-  margin-top: 4px;
-  font-size: 0.9rem;
+.subtitle {
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--brand-red);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}
+
+/* Cards grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Glassmorphism card */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 24px 24px;
+  background: rgba(20, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  min-height: 220px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(20, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.cardDesc {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+}
+
+.iconWrap {
+  color: rgba(255, 100, 100, 0.9);
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.cardLink {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 120, 120, 0.9);
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.card:hover .cardLink {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -61,4 +146,6 @@
   .grid {
     grid-template-columns: 1fr;
   }
+  .blob1 { width: 250px; height: 250px; }
+  .blob2 { width: 220px; height: 220px; }
 }

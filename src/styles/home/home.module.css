@@ -1,0 +1,20 @@
+.redLayer {
+  position: relative;
+  z-index: 2;
+  background-color: #d0021b;
+  display: flex;
+  flex-direction: column;
+}
+
+.redLayer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  background-position: -10% 50%;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}

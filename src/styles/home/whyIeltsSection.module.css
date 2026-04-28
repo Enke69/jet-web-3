@@ -1,6 +1,12 @@
 .root {
+  position: relative;
+  z-index: 2;
+  margin-top: -80px;
   padding: 80px 0;
-  background: var(--bg-soft);
+  background: #fff;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  overflow: hidden;
 }
 
 .grid {

@@ -1,8 +1,9 @@
 .root {
-  background: var(--text-dark);
-  color: #d4d8dc;
+  background: #fff;
+  color: var(--text-muted);
   padding: 64px 0 24px;
   margin-top: 80px;
+  border-top: 1px solid var(--border);
 }
 
 .grid {
@@ -16,7 +17,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #fff;
+  color: var(--text-dark);
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 16px;
@@ -27,14 +28,14 @@
 }
 
 .tagline {
-  color: #98a0aa;
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin: 0;
   max-width: 320px;
 }
 
 .column h4 {
-  color: #fff;
+  color: var(--text-dark);
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 16px;
@@ -49,11 +50,11 @@
 .column li {
   font-size: 0.9rem;
   margin-bottom: 10px;
-  color: #c0c5cc;
+  color: var(--text-muted);
 }
 
 .column a {
-  color: #c0c5cc;
+  color: var(--text-muted);
   transition: color var(--transition);
 }
 
@@ -62,11 +63,11 @@
 }
 
 .bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border);
   padding-top: 24px;
   text-align: center;
   font-size: 0.85rem;
-  color: #8a8f96;
+  color: var(--text-muted);
 }
 
 .bottom p {

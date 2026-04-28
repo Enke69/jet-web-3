@@ -48,3 +48,20 @@
   color: var(--text-muted);
   font-size: 1rem;
 }
+
+.light .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.light .title {
+  color: #fff;
+}
+
+.light .line {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.light .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}

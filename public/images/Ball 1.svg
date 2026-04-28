@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1949.88 1949.88">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="974.94" x2="1949.88" y2="974.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b2021d"/>
+      <stop offset="1" stop-color="#320004" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <circle class="st0" cx="974.94" cy="974.94" r="974.94"/>
+</svg>

@@ -96,10 +96,30 @@
 }
 
 .cta {
+  position: relative;
   padding: 64px 0;
-  background: var(--text-dark);
+  background-color: var(--brand-red);
+  overflow: hidden;
   color: #fff;
   text-align: center;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  background-position: -10% 50%;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cta > * {
+  position: relative;
+  z-index: 1;
 }
 
 .cta h2 {
@@ -110,7 +130,7 @@
 
 .cta p {
   margin: 0 0 24px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .ctaButtons {
@@ -126,26 +146,28 @@
   padding: 12px 26px;
   border-radius: 999px;
   font-weight: 600;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 
 .ctaPrimary {
-  background: var(--brand-red);
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   color: #fff;
 }
 
 .ctaPrimary:hover {
-  background: var(--brand-red-hover);
+  background: rgba(0, 0, 0, 0.35);
+  border-color: #fff;
 }
 
 .ctaSecondary {
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   color: #fff;
 }
 
 .ctaSecondary:hover {
-  background: #fff;
-  color: var(--text-dark);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
 }
 
 @media (max-width: 900px) {

@@ -4,8 +4,8 @@
   min-height: 100vh;
   min-height: 100dvh;
   box-sizing: border-box;
-  border-bottom-left-radius: 65px;
-  border-bottom-right-radius: 65px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
