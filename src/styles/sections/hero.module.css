@@ -269,16 +269,42 @@
   .root {
     border-bottom-left-radius: 48px;
     border-bottom-right-radius: 48px;
+    min-height: auto;
   }
   .content {
     padding-top: calc(1rem + 100px + env(safe-area-inset-top, 0px));
+    padding-bottom: 0;
+  }
+  .bodyColumn {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /* Text above image */
+  .inner {
+    order: 1;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+  /* Image below text, in normal flow */
+  .heroImageWrap {
+    position: relative;
+    order: 2;
+    width: 80%;
+    height: auto;
+    opacity: 1;
+    bottom: auto;
+    right: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   .title {
     font-size: clamp(1.75rem, 6vw, 3rem);
   }
   .lead {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -289,6 +315,9 @@
   }
   .content {
     padding-top: calc(0.75rem + 88px + env(safe-area-inset-top, 0px));
+  }
+  .heroImageWrap {
+    width: 90%;
   }
   .title {
     font-size: clamp(1.5rem, 7vw, 2.25rem);
