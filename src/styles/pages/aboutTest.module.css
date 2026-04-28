@@ -192,8 +192,34 @@
 }
 
 @media (max-width: 900px) {
-  .twoCol,
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+  .formatGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
   .formatGrid {
     grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 48px 0;
+  }
+  .priceTable th,
+  .priceTable td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 36px 0;
+  }
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

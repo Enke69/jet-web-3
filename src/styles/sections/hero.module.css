@@ -264,3 +264,41 @@
 .root.variantDark {
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .root {
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+  }
+  .content {
+    padding-top: calc(1rem + 100px + env(safe-area-inset-top, 0px));
+  }
+  .title {
+    font-size: clamp(1.75rem, 6vw, 3rem);
+  }
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .root {
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  .content {
+    padding-top: calc(0.75rem + 88px + env(safe-area-inset-top, 0px));
+  }
+  .title {
+    font-size: clamp(1.5rem, 7vw, 2.25rem);
+  }
+  .kicker {
+    font-size: 0.9rem;
+  }
+  .cPrimary,
+  .cSecondary {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}

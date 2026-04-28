@@ -52,3 +52,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .root {
+    padding: 48px 0;
+  }
+  .map,
+  .map iframe {
+    min-height: 240px;
+  }
+  .info {
+    padding: 20px;
+  }
+}

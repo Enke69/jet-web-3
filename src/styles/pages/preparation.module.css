@@ -172,8 +172,30 @@
 
 @media (max-width: 900px) {
   .threeCol,
-  .tipsGrid,
+  .tipsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .twoCol {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .threeCol,
+  .tipsGrid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 48px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 36px 0;
+  }
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

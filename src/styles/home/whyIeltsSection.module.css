@@ -43,6 +43,32 @@
 
 @media (max-width: 900px) {
   .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
     grid-template-columns: 1fr;
+  }
+  .root {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    margin-top: -48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .root {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: -32px;
+    padding: 48px 0;
   }
 }

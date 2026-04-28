@@ -135,3 +135,17 @@ a {
     transition: none;
   }
 }
+
+/* Mobile global utilities */
+@media (max-width: 480px) {
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+  }
+
+  /* Prevent horizontal overflow site-wide */
+  body {
+    overflow-x: hidden;
+  }
+}

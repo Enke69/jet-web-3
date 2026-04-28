@@ -86,3 +86,18 @@
   color: rgba(255, 255, 255, 0.88);
   max-width: 720px;
 }
+
+@media (max-width: 600px) {
+  .root {
+    padding: 56px 0 40px;
+  }
+  .lead {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .root {
+    padding: 48px 0 32px;
+  }
+}

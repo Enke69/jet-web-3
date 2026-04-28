@@ -261,6 +261,17 @@
   .hamburger { display: inline-flex; }
 }
 
+@media (max-width: 768px) {
+  .logo { height: 90px; }
+}
+
 @media (max-width: 480px) {
-  .logo { height: 80px; }
+  .logo { height: 72px; }
+  .mobileNav {
+    padding: 80px 16px 24px;
+  }
+  .mobileCta {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
 }

@@ -275,3 +275,35 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+  .priceTable th,
+  .priceTable td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 36px 0;
+  }
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .calMonth {
+    padding: 12px;
+  }
+  .calWeekHeaders,
+  .calCells {
+    font-size: 0.75rem;
+    gap: 2px;
+  }
+  .calCells span {
+    padding: 4px 0;
+  }
+}

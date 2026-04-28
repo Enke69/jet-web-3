@@ -84,5 +84,13 @@
 @media (max-width: 540px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .root {
+    padding: 40px 0 20px;
+    margin-top: 48px;
+  }
+  .tagline {
+    max-width: 100%;
   }
 }
