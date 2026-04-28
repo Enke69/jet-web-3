@@ -246,23 +246,41 @@
     grid-template-columns: 1fr auto 1fr;
   }
 
+  .logo {
+    height: 80px;
+  }
+
   .nav {
     width: 100%;
   }
 
   .navList {
     gap: 0.15rem 0.2rem;
+    justify-content: center;
   }
 
   .navLink,
   .navLinkActive {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .navLink {
-    padding: 0.4rem 0.55rem;
+    padding: 0.35rem 0.45rem;
   }
   .navLinkActive {
-    padding: 0.4rem 0.6rem;
+    padding: 0.35rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 64px;
+  }
+  .navLink,
+  .navLinkActive {
+    font-size: 11px;
+  }
+  .navLink {
+    padding: 0.3rem 0.4rem;
   }
 }

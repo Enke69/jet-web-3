@@ -272,7 +272,7 @@
     min-height: auto;
   }
   .content {
-    padding-top: calc(1rem + 100px + env(safe-area-inset-top, 0px));
+    padding-top: calc(1rem + 135px + env(safe-area-inset-top, 0px));
     padding-bottom: 0;
   }
   .bodyColumn {
@@ -314,7 +314,7 @@
     border-bottom-right-radius: 32px;
   }
   .content {
-    padding-top: calc(0.75rem + 88px + env(safe-area-inset-top, 0px));
+    padding-top: calc(0.75rem + 110px + env(safe-area-inset-top, 0px));
   }
   .heroImageWrap {
     width: 90%;
