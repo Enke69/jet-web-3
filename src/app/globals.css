@@ -1,0 +1,51 @@
+/* TT Hoves — public/fonts (Next нь /fonts — public дэх замаар) */
+@font-face {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/TT%20Hoves%20Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/TT%20Hoves%20Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/TT%20Hoves%20DemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/TT%20Hoves%20Bold.otf") format("opentype");
+}
+
+:root {
+  /* Зураг дээрх улаан, гарчгийн нил ягаан саарал */
+  --app-red: #ed2631;
+  --app-headline: #1a2332;
+  --app-muted: #5d6b7a;
+  --app-arc-stroke: rgba(180, 155, 160, 0.35);
+  --app-bg: #ffffff;
+  /* Bootstrap дээрх primary-г улаан */
+  --bs-body-font-family: "TT Hoves", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bs-primary: var(--app-red);
+  --bs-primary-rgb: 237, 38, 49;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

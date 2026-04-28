@@ -1,0 +1,25 @@
+.wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: var(--app-bg, #fff);
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(100%, 200vh);
+  height: min(85vh, 120vw);
+  min-width: 100%;
+  max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+  .svg {
+    max-width: none;
+    width: 120%;
+  }
+}
