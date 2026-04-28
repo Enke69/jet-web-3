@@ -1,0 +1,157 @@
+.section {
+  padding: 64px 0;
+}
+
+.threeCol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tipCard,
+.contentCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+}
+
+.tipCard h3,
+.contentCard h3 {
+  margin: 8px 0 6px;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.tipCard p,
+.contentCard p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.infoBox {
+  background: var(--bg-soft);
+  border-left: 4px solid var(--brand-red);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+}
+
+.infoBox h4 {
+  margin: 0 0 10px;
+  color: var(--text-dark);
+}
+
+.infoBox ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+}
+
+.infoBox li {
+  margin-bottom: 6px;
+}
+
+.regWrap {
+  text-align: center;
+}
+
+.regWrap p {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  color: var(--text-muted);
+}
+
+.regButton {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--brand-red);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 999px;
+  transition: background var(--transition);
+}
+
+.regButton:hover {
+  background: var(--brand-red-hover);
+  color: #fff;
+}
+
+.cta {
+  padding: 64px 0;
+  background: var(--text-dark);
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.cta p {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ctaButtons {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background var(--transition), color var(--transition);
+}
+
+.ctaPrimary {
+  background: var(--brand-red);
+  color: #fff;
+}
+
+.ctaPrimary:hover {
+  background: var(--brand-red-hover);
+}
+
+.ctaSecondary {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.ctaSecondary:hover {
+  background: #fff;
+  color: var(--text-dark);
+}
+
+@media (max-width: 900px) {
+  .threeCol,
+  .tipsGrid,
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
